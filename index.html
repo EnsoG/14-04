@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Bootstrap</title>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <script src="bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <header class="container-fluid p-5 bg-success text-white text-center">
+      <h1>Web con Bootstrap</h1>
+    </header>
+    <div class="container p-4">
+      <label class="form-label">Nombre</label>
+      <input type="text" class="form-control" />
+      <label class="form-label">Fecha Nacimiento</label>
+      <input type="date" class="form-control" />
+      <label class="form-label">Sueldo</label>
+      <input type="number" class="form-control" />
+      <label class="form-label">Foto de carnet</label>
+      <input type="file" class="form-control" />
+      <div class="row">
+        <div class="col-6">
+          <label>Email</label>
+          <input type="email" class="form-control" />
+        </div>
+        <div class="col-6">
+          <label>Estado civil</label>
+          <select class="form-control">
+            <option>Casado</option>
+            <option>Soltero</option>
+            <option>Separado</option>
+            <option>Viudo</option>
+            <option>Unión civil</option>
+          </select>
+        </div>
+      </div>
+      <div class="row mt-2" >
+        <div class="col-6">
+            <label class="form-label"> Sexo: </label>
+            <input type="radio" name="sexo" > Masculino
+            <input type="radio" name="sexo" > Femenino
+        </div>        
+        <div class="col-6">
+            <input type="checkbox">
+            <label class="form-label"> Confirme terminos y condiciones</label>
+        </div>
+      </div>
+      <hr>
+      <div class="text-end">
+        <input type="button" value="Limpiar" class="btn btn-outline-info">
+        <button class="btn btn-primary">Guardar</button>
+      </div>
+    </div>
+  </body>
+</html>
